@@ -4,14 +4,12 @@
  */
 package Interfaz;
 
-import ClasesConce.Principal;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.control.DatePicker;
-import javafx.scene.control.Spinner;
 import javafx.scene.control.TextField;
 
 /**

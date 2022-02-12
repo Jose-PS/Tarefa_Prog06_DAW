@@ -12,12 +12,12 @@ import javafx.scene.Scene;
  */
 public class SceneFactory {
 
-   public enum SetScene {
-        MAIN("/Interfaz/TallerFXML.fxml"),
-        NOVOVEHICULO("/Interfaz/NovoVehiculoFXML.fxml"),
+    enum SetScene {
+        MAIN("/Interfaz/Taller.fxml"),
+        NOVOVEHICULO("/Interfaz/NovoVehiculo.fxml"),
         MOSTRAINFO("/Interfaz/MostrarInfo.fxml");
         String url;
-        private SetScene(String url) {
+        SetScene(String url) {
             this.url = url;
         }
 
@@ -36,7 +36,7 @@ public class SceneFactory {
 
     private Scene getScene(SetScene scn)  {
         if (scene[scn.ordinal()]==null) {
-            scene[scn.ordinal()]=new Scene(CreaUI.create(scn.url));
+            scene[scn.ordinal()]=new Scene(new CreaUI().create(scn.url));
         }
         return scene[scn.ordinal()];
     }

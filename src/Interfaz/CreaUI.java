@@ -20,7 +20,7 @@ public class CreaUI {
             FXMLLoader loader= new FXMLLoader (CreaUI.class.getResource(url));
             pane=loader.load();
         } catch (IOException io) {
-            io.getMessage();
+            System.out.println(io.getMessage());
             System.out.println("Non se pudo cargar o FXML.");
             System.exit(0);
         }
