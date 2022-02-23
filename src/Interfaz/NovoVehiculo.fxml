@@ -6,48 +6,25 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Interfaz.NovoVehiculoFXMLController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Interfaz.TallerFXMLController">
    <children>
-      <SplitPane dividerPositions="0.29797979797979796" prefHeight="257.0" prefWidth="383.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
-        <items>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
-               <children>
-                  <Button layoutX="32.0" layoutY="14.0" mnemonicParsing="false" onAction="#novoVehiculo" prefHeight="25.0" prefWidth="108.0" text="Novo Vehiculo" />
-                  <Button layoutX="32.0" layoutY="97.0" mnemonicParsing="false" onAction="#buscaVehiculo" prefHeight="25.0" prefWidth="108.0" text="Buscar Vehiculo" />
-                  <TextField fx:id="Matricula" layoutX="32.0" layoutY="122.0" prefHeight="25.0" prefWidth="108.0" promptText="Matricula" />
-                  <Button layoutX="32.0" layoutY="58.0" mnemonicParsing="false" onAction="#listarVehiculos" prefHeight="25.0" prefWidth="108.0" text="Listar Vehiculos" />
-                  <Button layoutX="32.0" layoutY="169.0" mnemonicParsing="false" onAction="#actualizaKms" prefHeight="25.0" prefWidth="108.0" text="Modificar Kms" />
-                  <TextField fx:id="Matricula" layoutX="32.0" layoutY="194.0" prefHeight="25.0" prefWidth="108.0" promptText="Matricula" />
-                  <TextField fx:id="Kms" layoutX="32.0" layoutY="219.0" prefHeight="25.0" prefWidth="108.0" promptText="Kms" />
-                  <Button layoutX="32.0" layoutY="257.0" mnemonicParsing="false" onAction="#eliminaVehiculo" text="Eliminar Vehiculo" />
-                  <TextField fx:id="Matricula" layoutX="32.0" layoutY="282.0" prefHeight="25.0" prefWidth="108.0" promptText="Matrilcula" />
-                  <Button layoutX="32.0" layoutY="327.0" mnemonicParsing="false" onAction="#sair" prefHeight="25.0" prefWidth="108.0" text="Sair" />
-               </children>
-            </AnchorPane>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="384.0" prefWidth="444.0">
-               <children>
-                  <TextArea layoutX="5.0" layoutY="5.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
-                  <TextField fx:id="nome" layoutX="191.0" layoutY="14.0" prefHeight="25.0" prefWidth="174.0" promptText="Nome" />
-                  <TextField fx:id="dni" layoutX="191.0" layoutY="50.0" prefHeight="25.0" prefWidth="174.0" promptText="DNI" />
-                  <TextField fx:id="marca" layoutX="191.0" layoutY="86.0" prefHeight="25.0" prefWidth="174.0" promptText="Marca" />
-                  <TextField fx:id="mat" layoutX="191.0" layoutY="122.0" prefHeight="25.0" prefWidth="174.0" promptText="Matricula" />
-                  <TextField fx:id="kms" layoutX="191.0" layoutY="159.0" prefHeight="25.0" prefWidth="174.0" promptText="Kms" />
-                  <TextField fx:id="precio" layoutX="191.0" layoutY="194.0" prefHeight="25.0" prefWidth="174.0" promptText="Precio" />
-                  <DatePicker fx:id="data" layoutX="191.0" layoutY="230.0" promptText="Data" />
-                  <TextField fx:id="descripcion" alignment="TOP_LEFT" layoutX="193.0" layoutY="268.0" prefHeight="104.0" prefWidth="172.0" promptText="Descripcion" />
-                  <Label layoutX="49.0" layoutY="18.0" text="Nome do propietario" />
-                  <Label layoutX="55.0" layoutY="54.0" text="DNI do propietario" />
-                  <Label layoutX="63.0" layoutY="90.0" text="Marca do coche" />
-                  <Label layoutX="81.0" layoutY="126.0" text="Matricula" />
-                  <Label layoutX="77.0" layoutY="163.0" text="Kilometros" />
-                  <Label layoutX="89.0" layoutY="198.0" text="Precio" />
-                  <Label layoutX="48.0" layoutY="234.0" text="Data de matriculacion" />
-                  <Label layoutX="75.0" layoutY="268.0" text="Descripcion" />
-                  <Button layoutX="29.0" layoutY="347.0" mnemonicParsing="false" onAction="#sair" text="Sair" />
-                  <Button layoutX="122.0" layoutY="347.0" mnemonicParsing="false" onAction="#gardar" text="Gardar" />
-               </children>
-            </AnchorPane>
-        </items>
-      </SplitPane>
+      <TextField fx:id="nome" layoutX="222.0" layoutY="14.0" promptText="Propietario" />
+      <TextField fx:id="dni" layoutX="223.0" layoutY="49.0" promptText="DNI Propietario" />
+      <TextField fx:id="mat" layoutX="223.0" layoutY="81.0" promptText="Matricula " />
+      <TextField fx:id="marca" layoutX="223.0" layoutY="115.0" promptText="Marca " />
+      <TextField fx:id="precio" layoutX="223.0" layoutY="148.0" promptText="Prezo" />
+      <DatePicker fx:id="data" layoutX="223.0" layoutY="217.0" prefHeight="25.0" prefWidth="149.0" promptText="Data" />
+      <TextArea fx:id="descripcion" layoutX="223.0" layoutY="257.0" prefHeight="113.0" prefWidth="149.0" promptText="Info Adicional..." />
+      <TextField fx:id="kms" layoutX="223.0" layoutY="180.0" promptText="Kms" />
+      <Label layoutX="64.0" layoutY="18.0" text="Nome" />
+      <Label layoutX="64.0" layoutY="53.0" text="DNI" />
+      <Label layoutX="64.0" layoutY="85.0" prefHeight="17.0" prefWidth="93.0" text="Matricula" />
+      <Label layoutX="64.0" layoutY="119.0" prefHeight="17.0" prefWidth="110.0" text="Marca" />
+      <Label layoutX="64.0" layoutY="152.0" prefHeight="17.0" prefWidth="93.0" text="Prezo" />
+      <Label layoutX="64.0" layoutY="184.0" prefHeight="17.0" prefWidth="93.0" text="Kilometros" />
+      <Label layoutX="64.0" layoutY="221.0" text="Data Matricula" />
+      <Label layoutX="64.0" layoutY="257.0" prefHeight="17.0" prefWidth="137.0" text="Descricion" />
+      <Button layoutX="14.0" layoutY="345.0" mnemonicParsing="false" onAction="#atras" text="Volver" />
+      <Button layoutX="125.0" layoutY="345.0" mnemonicParsing="false" onAction="#gardar" text="Gardar" />
    </children>
-</AnchorPane>
+</Pane>
